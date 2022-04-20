@@ -40,6 +40,7 @@ func ClientUnaryInterceptor(parentCtx context.Context, method string, req, reply
 	raw, ok := Header(parentCtx, query_url)
 	if ok {
 		request, err := url.Parse(raw)
+		fmt.Println("request", request)
 		if err != nil {
 			return status.Error(codes.InvalidArgument, err.Error())
 		}
