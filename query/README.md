@@ -15,7 +15,7 @@ In order to get *collection operators* in your app you need the following:
 - Add *collection operator* types to a request message. You're free to use any subset of them.
 
 ```proto
-import "github.com/infobloxopen/atlas-app-toolkit/query/collection_operators.proto";
+import "github.com/prateeksuresh23/atlas-app-toolkit/query/collection_operators.proto";
 
 message MyListRequest {
     infoblox.api.Filtering filtering = 1;
@@ -96,8 +96,8 @@ if you want to compare enclosed object with json you are able to write:
 ```
 
 Note: if you decide to use toolkit provided `infoblox.api.Filtering` proto type, then you'll not be able to use [vanilla](https://github.com/grpc-ecosystem/grpc-gateway/tree/master/protoc-gen-openapiv2) swagger schema generation, since this plugin doesn't work with recursive nature of `infoblox.api.Filtering`.
-In this case you can use our [fork](https://github.com/infobloxopen/grpc-gateway/tree/v2/protoc-gen-openapiv2) which has a fix for this issue.
-You can also use [atlas-gentool](https://github.com/infobloxopen/atlas-gentool) which contains both versions of the plugin.
+In this case you can use our [fork](https://github.com/prateeksuresh23/grpc-gateway/tree/v2/protoc-gen-openapiv2) which has a fix for this issue.
+You can also use [atlas-gentool](https://github.com/prateeksuresh23/atlas-gentool) which contains both versions of the plugin.
 
 ## Sorting
 

@@ -14,9 +14,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"
 
-	"github.com/infobloxopen/atlas-app-toolkit/auth"
-	"github.com/infobloxopen/atlas-app-toolkit/gateway"
-	"github.com/infobloxopen/atlas-app-toolkit/requestid"
+	"github.com/prateeksuresh23/atlas-app-toolkit/auth"
+	"github.com/prateeksuresh23/atlas-app-toolkit/gateway"
+	"github.com/prateeksuresh23/atlas-app-toolkit/requestid"
 )
 
 const (

@@ -9,9 +9,9 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 
-	"github.com/infobloxopen/atlas-app-toolkit/query"
-	"github.com/infobloxopen/atlas-app-toolkit/rpc/resource"
-	"github.com/infobloxopen/atlas-app-toolkit/util"
+	"github.com/prateeksuresh23/atlas-app-toolkit/query"
+	"github.com/prateeksuresh23/atlas-app-toolkit/rpc/resource"
+	"github.com/prateeksuresh23/atlas-app-toolkit/util"
 )
 
 // DefaultFilteringConditionProcessor processes filter operator conversion

@@ -1,4 +1,4 @@
-module github.com/infobloxopen/atlas-app-toolkit
+module github.com/prateeksuresh23/atlas-app-toolkit
 
 go 1.14
 

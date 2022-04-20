@@ -105,7 +105,7 @@ The created transaction is stored in `context.Context` and passed to the request
 
 ```go
 import (
-	"github.com/infobloxopen/atlas-app-toolkit/gorm"
+	"github.com/prateeksuresh23/atlas-app-toolkit/gorm"
 )
 
 func (s *MyService) MyMethod(ctx context.Context, req *MyMethodRequest) (*MyMethodResponse, error) {
@@ -127,4 +127,4 @@ func (s *MyService) MyMethod(ctx context.Context, req *MyMethodRequest) (*MyMeth
 ## Migration version validation
 
 The toolkit does not require any specific method for database provisioning and setup.
-However, if [golang-migrate](https://github.com/golang-migrate/migrate) or the [infobloxopen fork](https://github.com/infobloxopen/migrate) of it is used, a couple helper functions are provided [here](version.go) for verifying that the database version matches a required version without having to import the entire migration package.
+However, if [golang-migrate](https://github.com/golang-migrate/migrate) or the [infobloxopen fork](https://github.com/prateeksuresh23/migrate) of it is used, a couple helper functions are provided [here](version.go) for verifying that the database version matches a required version without having to import the entire migration package.

@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/infobloxopen/atlas-app-toolkit/query"
+	"github.com/prateeksuresh23/atlas-app-toolkit/query"
 )
 
 func TestRetain(t *testing.T) {

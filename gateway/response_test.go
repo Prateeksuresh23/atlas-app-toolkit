@@ -16,7 +16,7 @@ import (
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 
-	gateway_test "github.com/infobloxopen/atlas-app-toolkit/gateway/internal"
+	gateway_test "github.com/prateeksuresh23/atlas-app-toolkit/gateway/internal"
 )
 
 type response struct {

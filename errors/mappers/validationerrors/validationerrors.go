@@ -3,7 +3,7 @@ package validationerrors
 import (
 	"context"
 
-	"github.com/infobloxopen/atlas-app-toolkit/errors"
+	"github.com/prateeksuresh23/atlas-app-toolkit/errors"
 	"google.golang.org/grpc/codes"
 )
 

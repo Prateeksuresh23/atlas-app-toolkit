@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/infobloxopen/atlas-app-toolkit/rpc/resource"
+	"github.com/prateeksuresh23/atlas-app-toolkit/rpc/resource"
 )
 
 const (

@@ -9,8 +9,8 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/infobloxopen/atlas-app-toolkit/query"
-	"github.com/infobloxopen/atlas-app-toolkit/util"
+	"github.com/prateeksuresh23/atlas-app-toolkit/query"
+	"github.com/prateeksuresh23/atlas-app-toolkit/util"
 )
 
 // DefaultFieldSelectionConverter performs default convertion for FieldSelection collection operator

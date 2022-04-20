@@ -1,11 +1,11 @@
 # Absolute github repository name.
-REPO := github.com/infobloxopen/atlas-app-toolkit
+REPO := github.com/prateeksuresh23/atlas-app-toolkit
 
 # Build directory absolute path.
 PROJECT_ROOT = $(CURDIR)
 
 # Utility docker image to generate Go files from .proto definition.
-# https://github.com/infobloxopen/atlas-gentool
+# https://github.com/prateeksuresh23/atlas-gentool
 GENTOOL_IMAGE := infoblox/atlas-gentool:latest
 
 .PHONY: default
@@ -44,4 +44,4 @@ gen: .gen-query .gen-errdetails .gen-errfields
 .PHONY: mocks
 mocks:
 	GO111MODULE=off go get -u github.com/maxbrunsfeld/counterfeiter
-	counterfeiter --fake-name ServerStreamMock -o ./logging/mocks/server_stream.go $(GOPATH)/src/github.com/infobloxopen/atlas-app-toolkit/vendor/google.golang.org/grpc/stream.go ServerStream
+	counterfeiter --fake-name ServerStreamMock -o ./logging/mocks/server_stream.go $(GOPATH)/src/github.com/prateeksuresh23/atlas-app-toolkit/vendor/google.golang.org/grpc/stream.go ServerStream

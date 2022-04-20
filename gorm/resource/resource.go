@@ -9,8 +9,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	resourcepb "github.com/infobloxopen/atlas-app-toolkit/rpc/resource"
-	"github.com/infobloxopen/atlas-app-toolkit/util"
+	resourcepb "github.com/prateeksuresh23/atlas-app-toolkit/rpc/resource"
+	"github.com/prateeksuresh23/atlas-app-toolkit/util"
 )
 
 const defaultResource = "<default>"

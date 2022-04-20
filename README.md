@@ -1,5 +1,5 @@
 # Atlas Application Toolkit
-[![Build Status](https://img.shields.io/travis/infobloxopen/atlas-app-toolkit/master.svg?label=build)](https://travis-ci.org/infobloxopen/atlas-app-toolkit)
+[![Build Status](https://img.shields.io/travis/prateeksuresh23/atlas-app-toolkit/master.svg?label=build)](https://travis-ci.org/prateeksuresh23/atlas-app-toolkit)
 
 This repository provides common Go utilities and helpers that are reusable from project-to-project. The goal is to prevent code duplication by encouraging teams to use and contribute to toolkit libraries.
 
@@ -13,7 +13,7 @@ The toolkit's approach is based on the following assumptions.
 - Each independent service uses gRPC
 - The REST API is presented by a separate service (gRPC Gateway) that serves as a reverse-proxy and forwards incoming HTTP requests to gRPC services
 
-To get started with the toolkit, check out the [Atlas CLI](https://github.com/infobloxopen/atlas-cli) repository. The Atlas CLI's "bootstrap command" can generate new applications that make use of the toolkit. For Atlas newcomers, this is a great way to get up-to-speed with toolkit best practices.
+To get started with the toolkit, check out the [Atlas CLI](https://github.com/prateeksuresh23/atlas-cli) repository. The Atlas CLI's "bootstrap command" can generate new applications that make use of the toolkit. For Atlas newcomers, this is a great way to get up-to-speed with toolkit best practices.
 
 ## Toolkit Libraries
 
@@ -74,7 +74,7 @@ We recommend to use gRPC server interceptor as middleware. See [examples](https:
 
 ## Example Toolkit Application
 
-An example app that is based on api-toolkit can be found [here](https://github.com/infobloxopen/atlas-contacts-app)
+An example app that is based on api-toolkit can be found [here](https://github.com/prateeksuresh23/atlas-contacts-app)
 
 ## Related Tools
 
@@ -89,7 +89,7 @@ As an alternative you may use [this plugin](https://github.com/mwitkow/go-proto-
 Validation can be invoked "automatically" if you add [this](https://github.com/grpc-ecosystem/go-grpc-middleware/tree/master/validator) middleware as a gRPC server interceptor.
 
 #### Database Migrations
-The toolkit does not require any specific method for database provisioning and setup. However, if [golang-migrate](https://github.com/golang-migrate/migrate) or the [infobloxopen fork](https://github.com/infobloxopen/migrate) of it is used, a couple helper functions are provided [here](gorm/version.go) for verifying that the database version matches a required version without having to import the entire migration package.
+The toolkit does not require any specific method for database provisioning and setup. However, if [golang-migrate](https://github.com/golang-migrate/migrate) or the [infobloxopen fork](https://github.com/prateeksuresh23/migrate) of it is used, a couple helper functions are provided [here](gorm/version.go) for verifying that the database version matches a required version without having to import the entire migration package.
 
 #### Documentation
 
@@ -191,8 +191,8 @@ message MyMessage {
 
 For more Swagger options see [this scheme](https://github.com/grpc-ecosystem/grpc-gateway/blob/master/protoc-gen-openapiv2/options/openapiv2.proto)
 
-See example [contacts app](https://github.com/infobloxopen/atlas-contacts-app/blob/master/pkg/pb/contacts.proto).
-Here is a [generated Swagger schema](https://github.com/infobloxopen/atlas-contacts-app/blob/master/pkg/pb/contacts.swagger.json).
+See example [contacts app](https://github.com/prateeksuresh23/atlas-contacts-app/blob/master/pkg/pb/contacts.proto).
+Here is a [generated Swagger schema](https://github.com/prateeksuresh23/atlas-contacts-app/blob/master/pkg/pb/contacts.swagger.json).
 
 **NOTE** [Well Known Types](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf) are
 generated in a bit unusual way:
@@ -208,4 +208,4 @@ generated in a bit unusual way:
 #### Atlas Protoc Gentool
 
 For convenience purposes there is an atlas-gentool image available which contains a pre-installed set of often used plugins.
-For more details see [infobloxopen/atlas-gentool](https://github.com/infobloxopen/atlas-gentool) repository.
+For more details see [infobloxopen/atlas-gentool](https://github.com/prateeksuresh23/atlas-gentool) repository.
