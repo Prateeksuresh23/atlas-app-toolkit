@@ -2,6 +2,7 @@ package gateway
 
 import (
 	"context"
+	"fmt"
 	"net/http"
 	"net/url"
 
@@ -34,6 +35,8 @@ type gateway struct {
 
 // ClientUnaryInterceptor parse collection operators and stores in corresponding message fields
 func ClientUnaryInterceptor(parentCtx context.Context, method string, req, reply interface{}, cc *grpc.ClientConn, invoker grpc.UnaryInvoker, opts ...grpc.CallOption) error {
+	fmt.Println("inside clientunaryinterceptor")
+	fmt.Println(req)
 	raw, ok := Header(parentCtx, query_url)
 	if ok {
 		request, err := url.Parse(raw)
