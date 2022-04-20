@@ -19,12 +19,12 @@ import (
 // they defined in a request message.
 func UnaryServerInterceptor() grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (res interface{}, err error) {
-
+		fmt.Println("testing...")
 		if req == nil {
 			grpclog.Warningf("collection operator interceptor: empty request %+v", req)
 			return handler(ctx, req)
 		}
-
+		fmt.Println("request", req)
 		res, err = handler(ctx, req)
 		if err != nil {
 			return res, err
